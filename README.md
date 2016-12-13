@@ -1,8 +1,8 @@
 ## Auto Constant!
-This space aged babel plugin allows you to create constants
-of the same name by simply writing the expression without `const` or assigning value:
+This space aged babel plugin allows you to create constants whose value is the
+named expression by simply writing the expression without `const` or assigning a value:
 
-Instead of:
+E.g. instead of:
 ```
 const FOO_UPDATE_IN_FLIGHT = 'FOO_UPDATE_IN_FLIGHT';
 ```
@@ -18,7 +18,7 @@ var FOO_UPDATE_IN_FLIGHT = 'FOO_UPDATE_IN_FLIGHT';
 ```
 
 ### Exporting
-If you want to export, add two underscores so the end:
+If you want to export, add two underscores so the end of your expression:
 ```
 FOO_LOADED__
 ```
