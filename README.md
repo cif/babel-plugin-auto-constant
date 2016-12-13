@@ -15,8 +15,9 @@ FOO_UPDATE_IN_FLIGHT;
 ... which compiles the same to:
 ```
 var FOO_UPDATE_IN_FLIGHT = 'FOO_UPDATE_IN_FLIGHT';
+```
 
-### Exporting*
+### Exporting
 If you want to export, add two underscores so the end:
 ```
 FOO_LOADED__
