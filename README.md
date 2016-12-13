@@ -29,3 +29,11 @@ var FOO_LOADED = exports.FOO_LOADED = 'FOO_LOADED';
 
 *Note if you are only exporting constants, make sure to export a default or any value so that
 Babel will define the __esModule property on exports*
+
+## Linting
+Unfortunately I haven't made time to come up with a good way around two ESlint rules.
+For now you'll want to add these if you want to be lazy wi
+```
+"no-unused-expressions": 0,
+"no-undef": 0
+```
