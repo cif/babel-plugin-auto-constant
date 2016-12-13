@@ -13,13 +13,18 @@ export default ({ types: t}) => {
         const name = path.node.expression.name;
 
         // return if already assigned value or not uppsercase
-        if(path.node.expression.right || !isUpperCase(name)) return;
+        if (path.node.expression.right || !name || !isUpperCase(name)) return;
+
+        // variables ending with __ are exported
+        const shouldExport = name.substring(name.length - 2, name.length) === '__';
+        const varName = shouldExport ? name.substring(0, name.length - 2) : name;
+        const exported = shouldExport ? ` = exports.${varName}` : '';
 
         // asssign
         path.replaceWith(t.assignmentExpression(
                    "=",
-                   t.identifier(`var ${name}`),
-                   t.identifier(`'${name}'`)
+                   t.identifier(`var ${varName}${exported}`),
+                   t.identifier(`'${varName}'`)
                  )
                );
       }

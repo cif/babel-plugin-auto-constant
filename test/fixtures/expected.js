@@ -1,7 +1,7 @@
 'use strict';
 
 var FOO = 'FOO';
-var BAR = 'BAR';
+var BAR = exports.BAR = 'BAR';
 
 jeep;
 var BEEP = 'BEEP';

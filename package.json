@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-auto-constant",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shortcut for constant definitions",
   "main": "lib/index.js",
   "repository": {

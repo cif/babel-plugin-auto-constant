@@ -15,3 +15,16 @@ FOO_UPDATE_IN_FLIGHT;
 ... which compiles the same to:
 ```
 var FOO_UPDATE_IN_FLIGHT = 'FOO_UPDATE_IN_FLIGHT';
+
+### Exporting*
+If you want to export, add two underscores so the end:
+```
+FOO_LOADED__
+```
+...which will compile to
+```
+var FOO_LOADED = exports.FOO_LOADED = 'FOO_LOADED';
+```
+
+*Note if you are only exporting constants, make sure to export a default or any value so that
+Babel will define the __esModule property on exports*
