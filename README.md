@@ -32,7 +32,7 @@ Babel will define the __esModule property on exports*
 
 ## Linting
 Unfortunately I haven't made time to come up with a good way around two ESlint rules.
-For now you'll want to add these if you want to be lazy wi
+For now you'll want to add these if you want to be lazy:
 ```
 "no-unused-expressions": 0,
 "no-undef": 0
