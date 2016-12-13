@@ -18,7 +18,7 @@ var FOO_UPDATE_IN_FLIGHT = 'FOO_UPDATE_IN_FLIGHT';
 ```
 
 ### Exporting
-If you want to export, add two underscores so the end of your expression:
+If you want to export, add two underscores to the end of your expression:
 ```
 FOO_LOADED__
 ```
